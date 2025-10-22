@@ -82,7 +82,7 @@ export default function VerifyOTPForm() {
     <div className="space-y-6 flex justify-center">
       <form onSubmit={handleSubmit} className="space-y-2">
         {error && (
-          <div className="bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded">
+          <div className="bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded mb-6">
             {error}
           </div>
         )}
@@ -103,7 +103,7 @@ export default function VerifyOTPForm() {
         </div>
 
         <div className="flex text-gray-50 justify-start items-center text-sm pb-4 pt-2">
-          If you didn’t receive a code.{' '}
+          If you didn’t receive a code.{" "}
           <span
             className={`text-primary cursor-pointer pl-1 ${
               resendCooldown > 0 ? "opacity-50 pointer-events-none" : ""
